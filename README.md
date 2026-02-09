@@ -1,6 +1,10 @@
 
 # Multi-channel signed distance field atlas generator
 
+This is a fork of [Chlumsky/msdf-atlas-gen](https://github.com/Chlumsky/msdf-atlas-gen) that fixes compilation on macOS (Apple Clang) and provides prebuilt binaries for Linux x64, macOS arm64, and Windows x64. Download them from the [Releases](https://github.com/xentripetal/msdf-atlas-gen/releases) page.
+
+---
+
 This is a utility for generating compact font atlases using [MSDFgen](https://github.com/Chlumsky/msdfgen).
 
 The atlas generator loads a subset of glyphs from a TTF or OTF font file, generates a distance field for each of them, and tightly packs them into an atlas bitmap (example below). The finished atlas and/or its layout metadata can be exported as an [Artery Font](https://github.com/Chlumsky/artery-font-format) file, a plain image file, a CSV sheet or a structured JSON file.
